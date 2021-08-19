@@ -172,92 +172,93 @@ class ShrinkChannels {
         }
         
         /* Attached CSS to sidebar */
-      .${config.constants.shrinkElementsName} {
-          width: 60px !important;
-          }
+      	.${config.constants.shrinkElementsName} {
+          	width: 60px !important;
+          	}
         
-      .${config.constants.shrinkElementsName} nav.container-3w7J-x {
-          width: 52px !important;
-  	      }
+      	.${config.constants.shrinkElementsName} nav.container-3w7J-x {
+          	width: 52px !important;
+  	      	}
   	
-      .${config.constants.shrinkElementsName} h2 {
-          display: none;
-          }
+      	.${config.constants.shrinkElementsName} h2 {
+          	display: none;
+          	}
 
-        .${config.constants.shrinkElementsName} div.mentionsBadge-3tC7Mi {
-          right: 10px;
-          }
+      	.${config.constants.shrinkElementsName} div.mentionsBadge-3tC7Mi {
+		right: 10px;
+          	}
 	
-	      .${config.constants.shrinkElementsName} div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
-  	      min-width: 30px;
-  	      min-height: 17px;
-          }
-  	
-  	    .${config.constants.shrinkElementsName} div.animatedContainer-1NSq4T {
-  	      height:0px;
-  	      transition: 0.3s;
+	.${config.constants.shrinkElementsName} div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+	 	min-width: 30px
+		min-height: 17px
+		}
+	
+	.${config.constants.shrinkElementsName} div.animatedContainer-1NSq4T {
+  	      	height:0px;
+  	      	transition: 0.3s;
  	        overflow: hidden;
 	        }
 	
-	      .${config.constants.shrinkElementsName} span.text-2e2ZyG {
-  	      text-indent: -9999px;
-  	      line-height: 0; /* Collapse the original line */
+	.${config.constants.shrinkElementsName} span.text-2e2ZyG {
+  	      	text-indent: -9999px;
+  	      	line-height: 0; /* Collapse the original line */
 	        }
 
-	      .${config.constants.shrinkElementsName} span.text-2e2ZyG::after {
-  	      content: "NM";
-  	      text-indent: 0;
-  	      display: block;
-  	      line-height: initial; /* New content takes up original line height */
+	.${config.constants.shrinkElementsName} span.text-2e2ZyG::after {
+  	      	content: "NM";
+  	      	text-indent: 0;
+  	      	display: block;
+  	      	line-height: initial; /* New content takes up original line height */
 	        }
 	
-	      .${config.constants.shrinkElementsName} div.content-3YMskv {
-  	      height: unset;
+	.${config.constants.shrinkElementsName} div.content-3YMskv {
+  	      	height: unset;
 	        }
 	
-	      .${config.constants.shrinkElementsName} div.container-1giJp5 button {
-  	      display: none;
+	.${config.constants.shrinkElementsName} div.container-1giJp5 button {
+  	      	display: none;
 	        }
 	
         .${config.constants.shrinkElementsName} svg.actionIcon-PgcMM2 {
 	        display: none;
 	        }
-	      .${config.constants.shrinkElementsName}:hover {
-  	      width: 240px !important;
-  	      transition: width 400ms ease;
+		
+	.${config.constants.shrinkElementsName}:hover {
+  	      	width: 240px !important;
+  	      	transition: width 400ms ease;
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover nav.container-3w7J-x {
-  	      width: 240px !important;
-  	      transition: width 400ms ease;
+	.${config.constants.shrinkElementsName}:hover nav.container-3w7J-x {
+  	      	width: 240px !important;
+  	      	transition: width 400ms ease;
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
-  	      height:135px;
+	.${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
+  	      	height:135px;
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover .mentionsBadge-3tC7Mi {
-  	      right:3px;
+	.${config.constants.shrinkElementsName}:hover .mentionsBadge-3tC7Mi {
+  	      	right:3px;
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
-  	      min-width: 18px;
+	.${config.constants.shrinkElementsName}:hover div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  	      	min-width: 18px;
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover span.text-2e2ZyG::after {
-  	      content: "New Mentions";
-  	      text-indent: 0;
-  	      display: block;
-  	      animation: fadein 100ms;
-  	      line-height: initial; /* New content takes up original line height */
+	.${config.constants.shrinkElementsName}:hover span.text-2e2ZyG::after {
+  	      	content: "New Mentions";
+  	      	text-indent: 0;
+  	      	display: block;
+  	      	animation: fadein 100ms;
+  	      	line-height: initial; /* New content takes up original line height */
 	        }
 
-	      .${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
-  	      height:130px;
+	.${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
+  	      	height:130px;
 	        }
 	
-	      .${config.constants.shrinkElementsName}:hover div.container-1giJp5 button {
-  	      display: block;
+	.${config.constants.shrinkElementsName}:hover div.container-1giJp5 button {
+  	      	display: block;
 	        }
 	
         /* Set animations */

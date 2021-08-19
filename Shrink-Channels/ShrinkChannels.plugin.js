@@ -21,8 +21,8 @@ const config = {
     },
     constants: {
         //The names we need for CSS
-        cssStyle: "HideChannelsStyle",
-        hideElementsName: "hideChannelElement",
+        cssStyle: "ShrinkChannelsStyle",
+        shrinkElementsName: "shrinkChannelElement",
         buttonID: "toggleChannels",
         buttonHidden: "channelsHidden",
         buttonVisible: "channelsVisible"
@@ -30,7 +30,7 @@ const config = {
 }
 
 
-class HideChannels {
+class ShrinkChannels {
     getName() { return config.info.name; }
     getDescription() { return config.info.description; }
     getVersion() { return config.info.version; }
@@ -124,7 +124,7 @@ class HideChannels {
     }
 
     initialize() {
-        //The sidebar to "minimize"/hide
+        //The sidebar to "minimize"/shrink
         this.sidebarClass = BdApi.findModuleByProps("container", "base").sidebar;
         //The header to place the button into.
         this.channelHeaderClass = BdApi.findModuleByProps("title", "toolbar").toolbar;
@@ -172,92 +172,93 @@ class HideChannels {
         }
         
         /* Attached CSS to sidebar */
-        .${config.constants.hideElementsName} {
-        width: 60px !important;
-        }
+      .${config.constants.shrinkElementsName} {
+          width: 60px !important;
+          }
         
-        .${config.constants.hideElementsName} nav.container-3w7J-x {
-  	width: 52px !important;
-  	}
+      .${config.constants.shrinkElementsName} nav.container-3w7J-x {
+          width: 52px !important;
+  	      }
   	
-  	.${config.constants.hideElementsName} h2 {
-  	display: none;
-	}
+      .${config.constants.shrinkElementsName} h2 {
+          display: none;
+          }
+
+        .${config.constants.shrinkElementsName} div.mentionsBadge-3tC7Mi {
+          right: 10px;
+          }
 	
-	.${config.constants.hideElementsName} div.mentionsBadge-3tC7Mi {
-  	right: 10px;
-	}
-	
-	.${config.constants.hideElementsName} div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
-  	min-width: 30px;
-  	min-height: 17px;
-  	}
+	      .${config.constants.shrinkElementsName} div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  	      min-width: 30px;
+  	      min-height: 17px;
+          }
   	
-  	.${config.constants.hideElementsName} div.animatedContainer-1NSq4T {
-  	height:0px;
-  	transition: 0.3s;
- 	overflow: hidden;
-	}
+  	    .${config.constants.shrinkElementsName} div.animatedContainer-1NSq4T {
+  	      height:0px;
+  	      transition: 0.3s;
+ 	        overflow: hidden;
+	        }
 	
-	.${config.constants.hideElementsName} span.text-2e2ZyG {
-  	text-indent: -9999px;
-  	line-height: 0; /* Collapse the original line */
-	}
+	      .${config.constants.shrinkElementsName} span.text-2e2ZyG {
+  	      text-indent: -9999px;
+  	      line-height: 0; /* Collapse the original line */
+	        }
 
-	.${config.constants.hideElementsName} span.text-2e2ZyG::after {
-  	content: "NM";
-  	text-indent: 0;
-  	display: block;
-  	line-height: initial; /* New content takes up original line height */
-	}
+	      .${config.constants.shrinkElementsName} span.text-2e2ZyG::after {
+  	      content: "NM";
+  	      text-indent: 0;
+  	      display: block;
+  	      line-height: initial; /* New content takes up original line height */
+	        }
 	
-	.${config.constants.hideElementsName} div.content-3YMskv {
-  	height: unset;
-	}
+	      .${config.constants.shrinkElementsName} div.content-3YMskv {
+  	      height: unset;
+	        }
 	
-	.${config.constants.hideElementsName} div.container-1giJp5 button {
-  	display: none;
-	}
-	.${config.constants.hideElementsName} svg.actionIcon-PgcMM2 {
-	display: none;
-	}
-	.${config.constants.hideElementsName}:hover {
-  	width: 240px !important;
-  	transition: width 400ms ease;
-	}
-
-	.${config.constants.hideElementsName}:hover nav.container-3w7J-x {
-  	width: 240px !important;
-  	transition: width 400ms ease;
-	}
-
-	.${config.constants.hideElementsName}:hover div.animatedContainer-1NSq4T {
-  	height:135px;
-	}
-
-	.${config.constants.hideElementsName}:hover .mentionsBadge-3tC7Mi {
-  	right:3px;
-	}
-
-	.${config.constants.hideElementsName}:hover div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
-  	min-width: 18px;
-	}
-
-	.${config.constants.hideElementsName}:hover span.text-2e2ZyG::after {
-  	content: "New Mentions";
-  	text-indent: 0;
-  	display: block;
-  	animation: fadein 100ms;
-  	line-height: initial; /* New content takes up original line height */
-	}
-
-	.${config.constants.hideElementsName}:hover div.animatedContainer-1NSq4T {
-  	height:130px;
-	}
+	      .${config.constants.shrinkElementsName} div.container-1giJp5 button {
+  	      display: none;
+	        }
 	
-	.${config.constants.hideElementsName}:hover div.container-1giJp5 button {
-  	display: block;
-	}
+        .${config.constants.shrinkElementsName} svg.actionIcon-PgcMM2 {
+	        display: none;
+	        }
+	      .${config.constants.shrinkElementsName}:hover {
+  	      width: 240px !important;
+  	      transition: width 400ms ease;
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover nav.container-3w7J-x {
+  	      width: 240px !important;
+  	      transition: width 400ms ease;
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
+  	      height:135px;
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover .mentionsBadge-3tC7Mi {
+  	      right:3px;
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover div.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  	      min-width: 18px;
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover span.text-2e2ZyG::after {
+  	      content: "New Mentions";
+  	      text-indent: 0;
+  	      display: block;
+  	      animation: fadein 100ms;
+  	      line-height: initial; /* New content takes up original line height */
+	        }
+
+	      .${config.constants.shrinkElementsName}:hover div.animatedContainer-1NSq4T {
+  	      height:130px;
+	        }
+	
+	      .${config.constants.shrinkElementsName}:hover div.container-1giJp5 button {
+  	      display: block;
+	        }
 	
         /* Set animations */
         .${this.sidebarClass} {
@@ -286,8 +287,8 @@ class HideChannels {
         //And if there are remnants of css left,
         //make sure we remove the class from the sidebar to ensure visual confirmation.
         let sidebar = document.querySelector(`.${this.sidebarClass}`);
-        if (sidebar.classList.contains(config.constants.hideElementsName))
-            sidebar.classList.remove(config.constants.hideElementsName);
+        if (sidebar.classList.contains(config.constants.shrinkElementsName))
+            sidebar.classList.remove(config.constants.shrinkElementsName);
 
 
         document.removeEventListener("keydown", this.keydownFunc, true);
@@ -323,19 +324,19 @@ class HideChannels {
         let button = document.getElementById(config.constants.buttonID),
             sidebar = document.querySelector(`.${this.sidebarClass}`)
 
-        //If it is showing, we need to hide it.
+        //If it is showing, we need to shrink it.
         if (!this.channelsHiddenBool) {
             //Change class for CSS
             button.setAttribute('class', config.constants.buttonHidden);
             //And add it to sidebar for the animation
-            sidebar.classList.add(config.constants.hideElementsName);
+            sidebar.classList.add(config.constants.shrinkElementsName);
             //Also set the memory.
             this.channelsHiddenBool = true;
         }
         //If it is hidden, we need to show it.
         else {
             button.setAttribute('class', config.constants.buttonVisible);
-            sidebar.classList.remove(config.constants.hideElementsName);
+            sidebar.classList.remove(config.constants.shrinkElementsName);
 
             this.channelsHiddenBool = false;
         }

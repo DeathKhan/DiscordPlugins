@@ -1,0 +1,2 @@
+# DiscordPlugins
+Make BetterDiscord Better
